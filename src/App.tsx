@@ -1,6 +1,8 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 import "./App.scss";
 import Homepage from "./pages/Homepage/Homepage";
+import { useEffect, useState } from "react";
+import { StyleProvider } from "./providers/StyleProvider";
 
 const theme = createTheme({
   palette: {
@@ -16,7 +18,9 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Homepage />
+      <StyleProvider>
+        <Homepage />
+      </StyleProvider>
     </ThemeProvider>
   );
 }
