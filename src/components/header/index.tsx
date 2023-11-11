@@ -5,26 +5,26 @@ import { Modal } from "../../modal";
 import { useState } from "react";
 
 export function Header() {
-  const [openModal, setOpenModal] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
 
   return (
     <header className={styles.header}>
-      <Modal isOpen={openModal}>
-        <p>teste teste</p>
-      </Modal>
       <section className={styles.headerContent}>
         <div className={styles.headerContato}>
-          <img src={Telefone} />
+          <img src={Telefone} alt="Ícone de telefone" />
           <p>(21) 2042-4442</p>
         </div>
-        <img src={LogoBmw} alt="logo da bmw" />
+        <img src={LogoBmw} alt="Logo da BMW" />
       </section>
-      <button
-        className={styles.buttonContacao}
-        onClick={() => setOpenModal(true)}
-      >
+      <button className={styles.buttonContacao} onClick={handleOpenModal}>
         Solicite uma cotação
       </button>
+
+      <Modal isOpen={modalOpen} />
     </header>
   );
 }
