@@ -55,6 +55,11 @@
       color: var(--white-900);
       font-weight: bold;
       font-size: 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0351BE;
+      }
     }
 
     .buttonRight {
@@ -75,10 +80,24 @@
       font-size: 12px;
       margin-bottom: 4px;
 
-      img {
-        width: 24px;
-        margin-left: 16px;
+      a {
+        svg {
+          color: #666;
+          font-size: 20px;
+          margin-left: 16px;
+        }
+
+        &:hover {
+          svg {
+            color: #0351BE;
+          }
+        }
       }
+
+      // img {
+      //   width: 24px;
+      //   margin-left: 16px;
+      // }
     }
   }
 
@@ -88,6 +107,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -98,11 +118,13 @@
           height: 45px;
           font-size: 14px;
         }
+
         .buttons {
           .buttonRight {
             display: none;
           }
         }
+
         .compartilhar {
           margin-top: 34px;
           margin-bottom: 54px;
@@ -133,11 +155,13 @@
           height: 45px;
           font-size: 14px;
         }
+
         .buttons {
           .buttonRight {
             display: none;
           }
         }
+
         .compartilhar {
           margin-top: 34px;
           margin-bottom: 54px;
@@ -152,6 +176,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .wrapper {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -162,11 +187,13 @@
           height: 45px;
           font-size: 14px;
         }
+
         .buttons {
           .buttonRight {
             display: none;
           }
         }
+
         .compartilhar {
           margin-top: 34px;
           margin-bottom: 54px;

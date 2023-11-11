@@ -1,9 +1,10 @@
 import { FC } from "react";
 import "./Cars.scss";
 import { listCars } from "../../../config/listaCars";
-import Facebook from "../../../assets/icons/facebook.svg";
 import Whatsapp from "../../../assets/icons/whatsapp.svg";
 import WhatsappButton from "../../../assets/icons/whatsapp-icon-seeklogo.com.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebookF, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 interface CarsProps {
   handleOpenModal: () => void;
@@ -24,8 +25,14 @@ const Cars: FC<CarsProps> = ({ handleOpenModal }) => {
       </div>
       <span className="compartilhar">
         Compartilhe:
-        <img src={Facebook} alt="logo do facebook" />
-        <img src={Whatsapp} alt="logo do whatsapp" />
+        <a href="">
+        <FontAwesomeIcon icon={faFacebookF} />
+        </a>
+        {/* <img src={Facebook} alt="logo do facebook" /> */}
+        <a href="">
+        <FontAwesomeIcon icon={faWhatsapp} />
+        </a>
+        {/* <img src={Whatsapp} alt="logo do whatsapp" /> */}
       </span>
     </div>
   ));
