@@ -37,8 +37,10 @@ const Cars: FC<CarsProps> = ({ handleOpenModal }) => {
         src={WhatsappButton}
         alt="foto whatsapp botao"
       />
-      <h2>ESCOLHA SEU BMW</h2>
-      <div className="wrapper">{renderList}</div>
+      <div className="container">
+        <h2>ESCOLHA SEU BMW</h2>
+        <div className="wrapper">{renderList}</div>
+      </div>
     </div>
   );
 };
