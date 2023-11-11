@@ -1,13 +1,30 @@
 .Home {
     .banner {
-        img {
-            width: 100%;
+        .item {
+            height: 535px;
+            background-size: cover !important;
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
         .banner {
-            img {
+            .item {
+                height: 500px;
+            }
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1366px) {
+        .banner {
+            .item {
+                height: 680px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        .banner {
+            .item {
                 height: 780px;
             }
         }
