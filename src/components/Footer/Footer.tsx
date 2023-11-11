@@ -1,6 +1,7 @@
-import { FC } from 'react';
+import { FC } from "react";
 import LogoAlpes from "../../assets/logo/logo-alpes.png";
-import './Footer.scss';
+import LogoBmw from "../../assets/logo/logo-bmw-rio.svg";
+import "./Footer.scss";
 
 interface FooterProps {}
 
@@ -19,6 +20,10 @@ const Footer: FC<FooterProps> = () => (
         © Copyright © 2021 Lorem ipsum dolor sit amet.
       </p>
       <div className="rodape">
+        <div className="logoBmw">
+          <img src={LogoBmw} alt="logo bmw" />
+        </div>
+
         <p className="alpes">
           Feito por: <img src={LogoAlpes} alt="logo alpes one" />
         </p>

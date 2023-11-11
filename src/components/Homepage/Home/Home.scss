@@ -14,7 +14,16 @@
   @media (min-width: 768px) and (max-width: 1024px) {
     .banner {
       .item {
-        height: 500px;
+        height: 680px;
+
+        .banner-desktop {
+          display: block;
+          width: 255px;
+          height: 478px;
+          position: absolute;
+          top: 30px;
+          right: 5%;
+        }
       }
     }
   }
@@ -26,10 +35,11 @@
 
         .banner-desktop {
           display: block;
-          width: 50%;
+          width: 255px;
+          height: 478px;
           position: absolute;
           top: 30px;
-          right: 0;
+          right: 10%;
         }
       }
     }
@@ -38,7 +48,16 @@
   @media screen and (min-width: 1366px) {
     .banner {
       .item {
-        height: 780px;
+        height: 680px;
+
+        .banner-desktop {
+          display: block;
+          width: 255px;
+          height: 478px;
+          position: absolute;
+          top: 30px;
+          right: 10%;
+        }
       }
     }
   }

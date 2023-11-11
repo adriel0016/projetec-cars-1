@@ -1,1 +1,46 @@
-.HeaderDesktop {}
+.HeaderDesktop {
+  display: flex;
+  justify-content: space-around;
+  height: 152px;
+  max-width: 1920px;
+  align-items: center;
+
+  .container-button {
+    display: flex;
+    gap: 30px;
+
+    button {
+      width: 165px;
+      height: 43px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white-900);
+      border: none;
+      cursor: pointer;
+      background-color: var(--black-900);
+      font-weight: bold;
+      font-size: 14px;
+
+      img {
+        width: 19px;
+        height: 19px;
+        margin-right: 6px;
+      }
+    }
+
+    .button-whatsapp {
+      background-color: var(--green-600);
+    }
+  }
+
+  .itens-modal {
+    display: flex;
+  }
+
+  img {
+    width: 92px;
+    height: 92px;
+  }
+}

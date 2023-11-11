@@ -24,7 +24,10 @@ const FormCotacao: FC<FormCotacaoProps> = () => {
 
       <div className={"containerForm"}>
         <form className={"form"}>
-          <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+          <TextField id="standard-basic" label="Nome" variant="standard" />
+          <TextField id="standard-basic" label="E-mail" variant="standard" />
+          <TextField id="standard-basic" label="Telefone" variant="standard" />
+          <FormControl variant="standard">
             <InputLabel id="demo-simple-select-standard-label">
               Carros
             </InputLabel>
@@ -43,11 +46,6 @@ const FormCotacao: FC<FormCotacaoProps> = () => {
               ))}
             </Select>
           </FormControl>
-
-          <TextField id="standard-basic" label="Nome" variant="standard" />
-          <TextField id="standard-basic" label="E-mail" variant="standard" />
-          <TextField id="standard-basic" label="Telefone" variant="standard" />
-          <TextField id="standard-basic" label="Modelo" variant="standard" />
           <TextField id="standard-basic" label="Mensagem" variant="standard" />
         </form>
 
